@@ -52,7 +52,6 @@ export const obfuscate = (content, deep, glyphs) => {
       for (const _ of glyphs) {
         const { key, value } = _;
         if (key === letter) {
-          console.log({key,letter})
           const items = value;
           const item = items ? items[Math.floor(Math.random() * items.length)] : letter;
           opts.content = `${opts.content.substr(0, i)}${item}${opts.content.substr(i + 1)}`;
