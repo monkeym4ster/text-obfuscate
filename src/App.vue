@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <h1>Obfuscate text</h1>
+    <a href="https://github.com/monkeym4ster/text-obfuscate" target="_blank">
+      <h1>Obfuscate text</h1>
+    </a>
     <el-tabs>
       <el-tab-pane label="Dashboard">
         <dashboard :glyphs="glyphs" :deep="deep" :input="input" v-on:updateValue="updateValue"></dashboard>
@@ -56,9 +58,13 @@ body {
   margin: 0 auto;
 }
 
-#app>h1 {
+#app>a>h1 {
   color: #20a0ff;
   text-align: center;
   margin: 50px 0;
+}
+
+#app>a:link {
+  text-decoration: none;
 }
 </style>

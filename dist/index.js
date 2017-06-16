@@ -247,7 +247,7 @@ var Component = __webpack_require__(7)(
   /* script */
   __webpack_require__(89),
   /* template */
-  __webpack_require__(82),
+  __webpack_require__(80),
   /* scopeId */
   null,
   /* cssModules */
@@ -532,7 +532,7 @@ exports = module.exports = __webpack_require__(16)(undefined);
 
 
 // module
-exports.push([module.i, "body{font-family:Helvetica,sans-serif}#app{width:80%;margin:0 auto}#app>h1{color:#20a0ff;text-align:center;margin:50px 0}", ""]);
+exports.push([module.i, "body{font-family:Helvetica,sans-serif}#app{width:80%;margin:0 auto}#app>a>h1{color:#20a0ff;text-align:center;margin:50px 0}#app>a:link{text-decoration:none}", ""]);
 
 // exports
 
@@ -819,7 +819,7 @@ var Component = __webpack_require__(7)(
   /* script */
   __webpack_require__(90),
   /* template */
-  __webpack_require__(80),
+  __webpack_require__(81),
   /* scopeId */
   null,
   /* cssModules */
@@ -837,7 +837,7 @@ var Component = __webpack_require__(7)(
   /* script */
   null,
   /* template */
-  __webpack_require__(81),
+  __webpack_require__(82),
   /* scopeId */
   null,
   /* cssModules */
@@ -867,6 +867,50 @@ module.exports = Component.exports
 
 /***/ }),
 /* 80 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "app"
+    }
+  }, [_vm._m(0), _vm._v(" "), _c('el-tabs', [_c('el-tab-pane', {
+    attrs: {
+      "label": "Dashboard"
+    }
+  }, [_c('dashboard', {
+    attrs: {
+      "glyphs": _vm.glyphs,
+      "deep": _vm.deep,
+      "input": _vm.input
+    },
+    on: {
+      "updateValue": _vm.updateValue
+    }
+  })], 1), _vm._v(" "), _c('el-tab-pane', {
+    attrs: {
+      "label": "Setting"
+    }
+  }, [_c('setting', {
+    attrs: {
+      "glyphs": _vm.glyphs
+    }
+  })], 1), _vm._v(" "), _c('el-tab-pane', {
+    attrs: {
+      "label": "Introduce"
+    }
+  }, [_c('introduce')], 1)], 1)], 1)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('a', {
+    attrs: {
+      "href": "https://github.com/monkeym4ster/text-obfuscate",
+      "target": "_blank"
+    }
+  }, [_c('h1', [_vm._v("Obfuscate text")])])
+}]}
+
+/***/ }),
+/* 81 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -939,51 +983,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('span', [_c('p', [_vm._v("This tool can be used to obfuscate text content.")]), _vm._v(" "), _c('p', [_vm._v("本工具可用于混淆文本内容。")])])
+  return _c('ul', [_c('li', [_vm._v("\n    Open source: "), _c('a', {
+    attrs: {
+      "href": "https://github.com/monkeym4ster/text-obfuscate",
+      "target": "_blank"
+    }
+  }, [_vm._v("https://github.com/monkeym4ster/text-obfuscate")])]), _vm._v(" "), _c('li', [_vm._v("This tool can be used to obfuscate text content.")]), _vm._v(" "), _c('li', [_vm._v("本工具可用于混淆文本内容。")])])
 }]}
-
-/***/ }),
-/* 82 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    attrs: {
-      "id": "app"
-    }
-  }, [_c('h1', [_vm._v("Obfuscate text")]), _vm._v(" "), _c('el-tabs', [_c('el-tab-pane', {
-    attrs: {
-      "label": "Dashboard"
-    }
-  }, [_c('dashboard', {
-    attrs: {
-      "glyphs": _vm.glyphs,
-      "deep": _vm.deep,
-      "input": _vm.input
-    },
-    on: {
-      "updateValue": _vm.updateValue
-    }
-  })], 1), _vm._v(" "), _c('el-tab-pane', {
-    attrs: {
-      "label": "Setting"
-    }
-  }, [_c('setting', {
-    attrs: {
-      "glyphs": _vm.glyphs
-    }
-  })], 1), _vm._v(" "), _c('el-tab-pane', {
-    attrs: {
-      "label": "Introduce"
-    }
-  }, [_c('introduce')], 1)], 1)], 1)
-},staticRenderFns: []}
 
 /***/ }),
 /* 83 */
@@ -1072,7 +1084,7 @@ var content = __webpack_require__(31);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(86)("91897e30", content, true);
+var update = __webpack_require__(86)("e4b7a8e4", content, true);
 
 /***/ }),
 /* 86 */
@@ -3155,6 +3167,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -3322,4 +3336,4 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
 
 /***/ })
 ],[92]);
-//# sourceMappingURL=index.js.map?af324cfae2aedd8bf802
+//# sourceMappingURL=index.js.map?52fd14e2378c49a4c7e4
